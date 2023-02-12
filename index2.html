@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess those contries flags</title>
+    <link rel="stylesheet" href="css/style2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,200;0,300;0,400;0,600;0,700;1,200;1,300;1,400;1,600&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <script src="generateQuestion.js"></script>
+</head>
+<body>
+    <header>
+        <div class="nav">
+            <a href="" title="Go back ?"><div class="button-back"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="#111D13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M9.00002 15.3802H13.92C15.62 15.3802 17 14.0002 17 12.3002C17 10.6002 15.62 9.22021 13.92 9.22021H7.15002" stroke="#111D13" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.57 10.7701L7 9.19012L8.57 7.62012" stroke="#111D13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg></div> </a>
+                <h1>Guess This Country Flag</h1>
+                 <div class="icon-website">
+                <div id="instagram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                <rect width="256" height="256" fill="none"></rect>
+                <circle cx="128" cy="128" r="40" fill="none" stroke="#111D13" stroke-linecap="round" stroke-linejoin="round" stroke-width="12"></circle>
+                <rect width="184" height="184" x="36" y="36" fill="none" stroke="#111D13" stroke-linecap="round" stroke-linejoin="round" stroke-width="12" rx="48"></rect>
+                <circle cx="180" cy="76" r="10" stroke="#111D13" fill="#111D13"></circle></svg>
+                </div>
+                <div class="twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                    <path fill="#111D13" d="M16 3.539a6.839 6.839 0 0 1-1.89.518 3.262 3.262 0 0 0 1.443-1.813 6.555 6.555 0 0 1-2.08.794
+                     3.28 3.28 0 0 0-5.674 2.243c0 .26.022.51.076.748a9.284 9.284 0 0 1-6.761-3.431 3.285 3.285 0 0 0 1.008 4.384A3.24 3.24 0 0 1 .64 6.578v.036a3.295 3.295 0 0 0 2.628
+                     3.223 3.274 3.274 0 0 1-.86.108 2.9 2.9 0 0 1-.621-.056 3.311 3.311 0 0 0 3.065 2.285 6.59 6.59 0 0 1-4.067 1.399c-.269 0-.527-.012-.785-.045A9.234 9.234 0 0 0 5.032 15c6.036 0 9.336-5 9.336-9.334 0-.145-.005-.285-.012-.424A6.544 6.544 
+                     0 0 0 16 3.539z" class="color03a9f4 svgShape"/></svg>
+                </div>
+                <div class="github">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="#111D13"><path d="M7.999 0C3.582 0 0 3.596 0 8.032a8.031 8.031 0 0 0 5.472 7.621c.4.074.546-.174.546-.387 0-.191-.007-.696-.011-1.366-2.225.485-2.695-1.077-2.695-1.077-.363-.928-.888-1.175-.888-1.175-.727-.498.054-.488.054-.488.803.057
+                        1.225.828 1.225.828.714 1.227 1.873.873 2.329.667.072-.519.279-.873.508-1.074-1.776-.203-3.644-.892-3.644-3.969 0-.877.312-1.594.824-2.156-.083-.203-.357-1.02.078-2.125 0 0 .672-.216 2.2.823a7.633 7.633 0 0 1 2.003-.27 7.65 7.65 0 0 1 2.003.271c1.527-1.039 2.198-.823 2.198-.823.436 1.106.162 1.922.08 
+                        2.125.513.562.822 1.279.822 2.156 
+                        0 3.085-1.87 3.764-3.652 3.963.287.248.543.738.543 1.487 0 1.074-.01 1.94-.01 2.203 0 .215.144.465.55.386A8.032 
+                        8.032 0 0 0 16 8.032C16 3.596 12.418 0 7.999 0z"/>
+                    </svg>
+                </div>
+                <div class="mail">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256" style="fill:#000000;">
+                    <g fill="#111d13" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" 
+                    style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M5.5,7c-2.48047,0 -4.5,2.01953 -4.5,4.5v0.42578l24,17.07422l24,-17.07422v-0.42578c0,-2.48047 -2.01953,-4.5 -4.5,-4.5zM6.35156,9h37.29297l-18.64453,13zM1,14.02734v24.47266c0,2.48047 
+                    2.01953,4.5 4.5,4.5h39c2.48047,0 4.5,-2.01953 4.5,-4.5v-24.47266l-6,4.26953v22.70313h-36v-22.70312z"></path></g></g>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        </div>
+        
+    </header>
+    <main>
+        <div id="wrong-panel">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M16.52 5.65002L13.42 3.25002C13.02 2.85002 12.12 2.65002 11.52 2.65002H7.71998C6.51998 2.65002 5.21998 3.55002 4.91998 4.75002L2.51998 12.05C2.01998 13.45 2.91998 14.65 4.41998 14.65H8.41998C9.01998 14.65 9.51998 15.15 9.41998 15.85L8.91998 19.05C8.71998 19.95 9.31998 20.95 10.22 21.25C11.02 21.55 12.02 21.15 12.42 20.55L16.52 14.45" stroke="#111d13" stroke-width="1.5" stroke-miterlimit="10"/>
+                <path d="M21.62 5.65V15.45C21.62 16.85 21.02 17.35 19.62 17.35H18.62C17.22 17.35 16.62 16.85 16.62 15.45V5.65C16.62 4.25 17.22 3.75 18.62 3.75H19.62C21.02 3.75 21.62 4.25 21.62 5.65Z" stroke="#111d13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="Wrong-Answer"></span>
+        </div>
+        <div id="right-panel">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                <path d="M7.47998 18.35L10.58 20.75C10.98 21.15 11.88 21.35 12.48 21.35H16.28C17.48 21.35 18.78 20.45 19.08 19.25L21.48 11.95C21.98 10.55 21.08 9.34997 19.58 9.34997H15.58C14.98 9.34997 14.48 8.84997 14.58 8.14997L15.08 4.94997C15.28 4.04997 14.68 3.04997 13.78 2.74997C12.98 2.44997 11.98 2.84997 11.58 3.44997L7.47998 9.54997" stroke="#111d13" stroke-width="1.5" stroke-miterlimit="10"/>
+                <path d="M2.38 18.35V8.55002C2.38 7.15002 2.98 6.65002 4.38 6.65002H5.38C6.78 6.65002 7.38 7.15002 7.38 8.55002V18.35C7.38 19.75 6.78 20.25 5.38 20.25H4.38C2.98 20.25 2.38 19.75 2.38 18.35Z" stroke="#111d13" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="right-Answer"></span>
+        </div>
+        <div id="question-panel">
+            <img src="" alt="">
+            <div class="answers">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+       <div class="end-panel">
+            <span>Good job, you have completed the game !</span>
+            <p></p>
+       </div>
+    </main>
+    <footer>
+    <div class="range-panel">
+        <span></span>
+       
+    </div>
+    <div class="button-panel">
+        <button>Next Question  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M8.5 12H14.5" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12.5 15L15.5 12L12.5 9" stroke="#000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg></button>
+       
+    </div>
+    </footer>
+</body>
+</html>
